@@ -44,11 +44,14 @@ btnCreate.addEventListener('click', async () => {
 container.addEventListener('click', (e) => {
     const selected = e.target.parentNode.parentNode.parentNode
     let trueParent = selected.parentNode.children
+
+    // Adds a delete button
     if (e.target.classList.contains('deleteGame')) {
         e.target.parentNode.parentNode.remove()
         counter--
         counterDisplay.innerHTML = counter
     }
+    // Moves up a list
     if (e.target.classList.contains('upArrow')) {
         let temp = trueParent[selected.id]
         let start = selected.id
