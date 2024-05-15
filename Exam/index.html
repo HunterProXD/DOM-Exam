@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>DOM Exam</title>
+</head>
+<body>
+    
+    <form id="createForm">
+        <input type="text" id="gameName" placeholder="Enter game name">
+        <button type="submit" id="btnCreate">Create</button>
+    </form>
+
+    <div id="taskListContainer">
+        <div class="tasks noTop" id="0">
+            <p class="taskNr title">Game Nr</p>
+            <p class="taskName title">Task Name</p>
+
+        </div>
+    </div>
+
+    <div id="gamesCounterContainer">
+        <p>Games in List:</p><p id="gamesCounter">0</p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
